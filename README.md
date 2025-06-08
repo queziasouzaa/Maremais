@@ -4,8 +4,7 @@ MARÉ+ é um projeto desenvolvido como trabalho final da disciplina de Interaç�
 
 ## 🌐 Acesse o site
 
-Você pode visualizar o protótipo publicado aqui:  
-👉 [Mare+](https://queziasouzaa.github.io/Maremais/)
+Você pode visualizar o protótipo publicado aqui: [Mare+](https://queziasouzaa.github.io/Maremais/)
 
 ## 🖼️ Imagens do Site
 
