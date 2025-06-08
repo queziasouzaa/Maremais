@@ -1,0 +1,565 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e6f3f5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    background-color: #d0f0f3;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #b0e0e6;
+}
+
+.logo {
+    color: #00a8b5;
+    font-size: 32px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #00a8b5;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+    color: #006d7a;
+    font-weight: bold;
+}
+
+/* Main Content */
+main {
+    flex: 1;
+    padding: 40px 50px;
+}
+
+/* Home Page Styles */
+.home-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.card {
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-icon {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: #00a8b5;
+    font-size: 18px;
+}
+
+/* Map Section */
+.map-section {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.map-header {
+    margin-bottom: 20px;
+}
+
+.map-header h3 {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.rating {
+    color: #f4b400;
+    margin: 5px 0;
+}
+
+.directions {
+    color: #00a8b5;
+    text-decoration: none;
+}
+
+.mapa {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.mapa iframe {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Info Section */
+.info-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.info-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.info-card h3 {
+    color: #00a8b5;
+    margin-bottom: 10px;
+}
+
+/* Tide Table Page */
+.tide-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.tide-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tide-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tide-table th {
+    background-color: #00a8b5;
+    color: white;
+    padding: 15px;
+    text-align: left;
+}
+
+.tide-table td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.high-tide {
+    color: #00a8b5;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.low-tide {
+    color: #666;
+    font-style: italic;
+}
+
+/* Calendar */
+.calendar-container {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.nav-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #00a8b5;
+    cursor: pointer;
+}
+
+.calendar {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.calendar th {
+    padding: 10px;
+    text-align: center;
+    color: #666;
+    font-weight: normal;
+}
+
+.calendar td {
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.calendar td.selected {
+    background-color: #00a8b5;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Locations Page */
+.locations-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.locations-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.location-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.location-card h3 {
+    color: #00a8b5;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.location-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.more-suggestions {
+    background-color: #f0f8f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.more-suggestions:hover {
+    background-color: #e0f0f2;
+}
+
+/* Weather Page */
+.weather-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.weather-content {
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.location-selector {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.location-icon {
+    font-size: 24px;
+}
+
+.location-selector h2 {
+    color: #00a8b5;
+}
+
+.dropdown-arrow {
+    margin-left: auto;
+    color: #00a8b5;
+}
+
+.current-weather {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.weather-icon {
+    font-size: 80px;
+    margin-bottom: 10px;
+}
+
+.city-name {
+    color: #00a8b5;
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+.day {
+    color: #666;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.temperature {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.temp-main {
+    font-size: 48px;
+    color: #333;
+}
+
+.temp-range {
+    font-size: 24px;
+    color: #666;
+}
+
+.weekly-forecast {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.day-forecast {
+    text-align: center;
+    padding: 15px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+}
+
+.day-forecast h4 {
+    color: #00a8b5;
+    margin-bottom: 10px;
+}
+
+.weather-small {
+    font-size: 32px;
+    margin: 10px 0;
+}
+
+.temp-high {
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.temp-low {
+    color: #666;
+    font-size: 16px;
+}
+
+.calendar-weather {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* About Page */
+.about-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.about-content {
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-section {
+    margin-bottom: 50px;
+}
+
+.about-section h2 {
+    color: #00a8b5;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    color: #666;
+    line-height: 1.8;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.feature-card {
+    text-align: center;
+    padding: 20px;
+}
+
+.feature-icon {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.feature-card h3 {
+    color: #00a8b5;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.mission-section {
+    text-align: center;
+    padding: 40px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.mission-section h2 {
+    color: #00a8b5;
+    margin-bottom: 20px;
+}
+
+.contact-section h2 {
+    color: #00a8b5;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    background-color: #f0f8f9;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.contact-info p {
+    margin: 10px 0;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    background-color: #003d5c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+    
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    nav a {
+        padding: 5px 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+    
+    nav a:hover,
+    nav a.active {
+        background-color: #00a8b5;
+        color: white;
+    }
+    
+    .card-grid,
+    .locations-grid,
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .tide-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .weekly-forecast {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .info-section {
+        grid-template-columns: 1fr;
+    }
+    
+    .logo {
+        font-size: 24px;
+    }
+    
+    main {
+        padding: 20px;
+    }
+}

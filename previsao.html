@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão do Tempo - Maré+</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 class="logo">MARÉ+</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Início</a></li>
+                <li><a href="previsao.html">Previsão</a></li>
+                <li><a href="locais.html">Locais</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="weather-container">
+        <div class="weather-content">
+            <div class="location-selector">
+                <span class="location-icon">📍</span>
+                <h2>Maceió</h2>
+                <span class="dropdown-arrow">▼</span>
+            </div>
+
+            <div class="current-weather">
+                <div class="weather-icon">☀️</div>
+                <h1 class="city-name">Maceió</h1>
+                <p class="day">Sex</p>
+                <div class="temperature">
+                    <span class="temp-main">29°</span>
+                    <span class="temp-range">27°</span>
+                </div>
+            </div>
+
+            <div class="weekly-forecast">
+                <div class="day-forecast">
+                    <h4>Sáb</h4>
+                    <div class="weather-small">🌤️</div>
+                    <p class="temp-high">31°</p>
+                    <p class="temp-low">25°</p>
+                </div>
+                <div class="day-forecast">
+                    <h4>Dom</h4>
+                    <div class="weather-small">☀️</div>
+                    <p class="temp-high">30°</p>
+                    <p class="temp-low">25°</p>
+                </div>
+                <div class="day-forecast">
+                    <h4>Seg</h4>
+                    <div class="weather-small">🌧️</div>
+                    <p class="temp-high">28°</p>
+                    <p class="temp-low">24°</p>
+                </div>
+                <div class="day-forecast">
+                    <h4>Ter</h4>
+                    <div class="weather-small">🌧️</div>
+                    <p class="temp-high">29°</p>
+                    <p class="temp-low">24°</p>
+                </div>
+                <div class="day-forecast">
+                    <h4>Qua</h4>
+                    <div class="weather-small">🌤️</div>
+                    <p class="temp-high">30°</p>
+                    <p class="temp-low">25°</p>
+                </div>
+                <div class="day-forecast">
+                    <h4>Qui</h4>
+                    <div class="weather-small">☀️</div>
+                    <p class="temp-high">30°</p>
+                    <p class="temp-low">26°</p>
+                </div>
+            </div>
+
+            <div class="calendar-weather">
+                <div class="calendar-header">
+                    <button class="nav-btn">&lt;</button>
+                    <h3>Abril 2025</h3>
+                    <button class="nav-btn">&gt;</button>
+                </div>
+                <table class="calendar">
+                    <thead>
+                        <tr>
+                            <th>Dom</th>
+                            <th>Seg</th>
+                            <th>Ter</th>
+                            <th>Qua</th>
+                            <th>Qui</th>
+                            <th>Sex</th>
+                            <th>Sáb</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>11</td>
+                            <td>12</td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>14</td>
+                            <td>15</td>
+                            <td>16</td>
+                            <td>17</td>
+                            <td>18</td>
+                            <td>19</td>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>21</td>
+                            <td>22</td>
+                            <td>23</td>
+                            <td>24</td>
+                            <td class="selected">25</td>
+                            <td>26</td>
+                        </tr>
+                        <tr>
+                            <td>27</td>
+                            <td>28</td>
+                            <td>29</td>
+                            <td>30</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 Maré+ - Todos os direitos reservados.</p>
+        <p><a href="#">Política de Privacidade</a> | <a href="#">Ajuda</a></p>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/weather.js"></script>
+</body>
+</html>
