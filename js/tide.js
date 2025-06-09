@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'
     ];
     
-    let currentMonth = 3; // Abril (0-indexed)
+    let currentMonth = 5; // Junho (0-indexed)
     let currentYear = 2025;
     
     // Navegação do calendário
