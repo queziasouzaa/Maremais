@@ -1,5 +1,3 @@
-// Código comum a todas as páginas
-
 // Função para destacar o link ativo no menu
 document.addEventListener('DOMContentLoaded', function() {
     // Obter o nome do arquivo atual
